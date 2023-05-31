@@ -50,6 +50,8 @@ console.log(firstName);
 
 console.log(firstName.length);
 
+let pom = "test string";
+
 // ispisace duzinu reci
 
 //svaki karakter u stringu ima svoj index, tj redni broj, npr:
@@ -81,3 +83,30 @@ isGameFinished = true;
 
 let ime = "sejo";
 let velikaSlova = ime.toUpperCase();
+
+// napravite novu varijablu koja se zove street i dodelite joj
+// vrednost naziva vase ulice gde zivite;
+
+let flowers = "tulips";
+let food = "burgers";
+let juices = "lemonades";
+
+console.log(flowers.length);
+let duzinaReci = flowers.length - 1;
+
+console.log(flowers[flowers.length - 1]);
+console.log(flowers[duzinaReci]);
+
+// ako je dinel stariji od omera ispisi tu poruku
+
+let dinel = 19;
+let omer = "19";
+
+if (dinel > omer) {
+	console.log("dinel je stariji od omca");
+} else if (dinel == omer) {
+	// console.log("dinel " + dinel + " i omer" + " 19" + " imaju isto godina");
+	console.log(
+		`dinel ima ${dinel} godina isto kao i omer koji ima ${omer} godina`
+	);
+}

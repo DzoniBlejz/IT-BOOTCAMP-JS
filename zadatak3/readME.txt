@@ -16,6 +16,8 @@ sta ce se ispisat:
 
 let eggCount = 42;
 eggCount + 2;
+eggCount += 2;
+
 
 ako napisem console.log(eggCount) koji broj cemo videti?
 
@@ -24,9 +26,10 @@ rating = 19;
 
 ako napisem console.log(rating) koji broj cemo videti?
 
-let wind_speed = 76;
-wind_speed +=5;
-wind_speed--;
+let windSpeed = 76;
+windSpeed += 5;
+windSpeed--;
+
 
 ako napisem console.log(wind_speed) koji broj cemo videti?
 i je li ima nesto sto bi mogli dodatno da promenimo u ovom primeru?
@@ -42,3 +45,6 @@ ne mozemo da deklarisemo varijable kako mi hocemo, nego moramo da se drzimo neki
 
 
 
+objasniti operatore sledeci cas.
+!==, ===, ==, > < | && . . .
+interpolaciju, i kako mozemo da koristimo navodnike u stringovima.
