@@ -48,3 +48,23 @@ ne mozemo da deklarisemo varijable kako mi hocemo, nego moramo da se drzimo neki
 objasniti operatore sledeci cas.
 !==, ===, ==, > < | && . . .
 interpolaciju, i kako mozemo da koristimo navodnike u stringovima.
+
+JavaScript operatori za poredjenje
+
+
+==	equal to
+===	equal value and equal type
+!=	not equal
+!==	not equal value or not equal type
+>	greater than
+<	less than
+>=	greater than or equal to
+<=	less than or equal to
+?	ternary operator (uslovni operator)
+
+
+JavaScript logicki operatori
+
+&&	logical and, primer: (muhamed && nikola && davud)
+||	logical or, primer: (muhamed || nikola || davud)
+!	logical not, primer: (!muhamed) , (muhamed)
