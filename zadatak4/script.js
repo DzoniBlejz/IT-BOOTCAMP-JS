@@ -31,20 +31,24 @@ let godineKomsija2 = 99;
 let godineKomsinica = 200;
 
 if (godineKomsija1 < godineKomsija2 && godineKomsija1 < godineKomsinica) {
-	//prvo proveravamo koji je najmladji, pa onda unutar tog uslova napravimo jos jedan uslov gde proveravamo koji je drugi najstariji
+	//prvo proveravamo koji je najmladji, pa onda unutar tog uslova
+	//napravimo jos jedan uslov gde proveravamo koji je drugi najstariji
 	// i koji je najstariji
 	console.log(komsija1, "je najmladji komsija");
 	if (godineKomsija2 < godineKomsinica) {
-		// ovde proveravamo koji je drugi najstariji i koji je najstariji, u SLUCAJU kada je prvi uslov tacan, (linija 33)
+		// ovde proveravamo koji je drugi najstariji i koji je najstariji,
+		// u SLUCAJU kada je prvi uslov tacan, (linija 33)
 		console.log(komsija2, "je drugi najstariji komsija");
 		console.log(komsinica, "je najstariji komsija");
 	} else {
 		console.log(komsinica, "je drugi najstariji komsija");
 		console.log(komsija2, "je najstariji komsija");
 	}
-} else if (
-	// isto i ovde, proveravamo koji je najmladji komsija, pa onda ako je ovaj uslov tacan, ulazimo u njegov blok
+
+	// isto i ovde, proveravamo koji je najmladji komsija, pa onda ako je ovaj uslov tacan,
+	//ulazimo u njegov blok
 	// pa tamo pravimo jos jedan uslov kao u prethodnom primeru
+} else if (
 	godineKomsija2 < godineKomsija1 &&
 	godineKomsija2 < godineKomsinica
 ) {
