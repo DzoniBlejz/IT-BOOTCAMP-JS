@@ -1,5 +1,12 @@
 truthy falsy vrednosti: sledeci cas
+sve vrednosti su true, to jest truthy osim
+false, 0, -0, 0n, "", null, undefined, i NaN.
+
+
 objasniti ternarni operator ? 
+condition ? exprIfTrue : exprIfFalse
+3 > 2 ? console.log("zdravo") : console.log("nije zdravo")
+
 sta vraca uslov u IF
 logicki operatori && || !
 prednost operatora(&& ima prednost)
