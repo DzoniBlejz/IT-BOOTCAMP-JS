@@ -68,6 +68,6 @@ console.log(newArray);
 
 // za domaci:
 
-// uradite za slucaj kad su brojevi neparni i veci od 5 a manji od 20
+// uradite za slucaj kad je vrednost is prompta neparna i veca od 5 a manja od 20
 // da se izbrisu prva 2 elementa iz niza.
 // u suprotnom, dodajte 3 elementa na pocetak.
