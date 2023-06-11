@@ -36,12 +36,19 @@ let names = ["muhamed", "enes", "dinel","omer"];
 
 kako mozemo uvek da dodamo element na kraj niza?:)
 
+names[names.length] = "sejo"
+
 metode koje cemo cesto koristit:
+
 pop, push, shift, unsift:
+
 push- dodaje na kraj
 pop- uklanja sa kraja
-shift-uklanja sa pocetka
-unshift - dodaje na pocetak
+
+shift- uklanja sa pocetka
+unshift -dodaje na pocetak
+
+names.pop()
 
 
 
