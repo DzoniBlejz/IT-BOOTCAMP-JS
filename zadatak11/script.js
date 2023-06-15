@@ -77,6 +77,8 @@ console.log(letters);
 brojevi.sort();
 console.log(brojevi);
 
+// funkcija ima kljucnu rec, naziv funkcije, parametre moze da ima a i ne mora, i telo funkcije.
+
 function davudKalkulise(a, b) {
 	let rezultat = 0;
 	rezultat = a + b;
@@ -90,7 +92,7 @@ function davudOduzima(a, b) {
 	console.log(rezultat);
 	return rezultat;
 }
-
+// funckija ispisiPoruku ne prima nikakve parametre.
 function ispisiPoruku() {
 	console.log("uneli ste pogresne podatke, probajte opet");
 }
@@ -117,3 +119,7 @@ function ispisiImeiPrezime(a, b) {
 ispisiImeiPrezime("davud", "zzukorlic");
 ispisiImeiPrezime("muhamed", "nicevic");
 ispisiImeiPrezime("enes", "klimenta");
+
+// za domaci:
+
+// prodjite sve metode, iskucajte ih opet sve, i funkcije.
