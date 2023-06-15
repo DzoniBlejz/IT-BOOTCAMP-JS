@@ -1,0 +1,1 @@
+slice, splice, join, concat, reverse, sort
