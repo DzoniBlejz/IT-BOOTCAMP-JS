@@ -32,19 +32,19 @@
 // parametri su vrednosti koje ocekuje neka funkcija
 // da bi mogla da radi neku dalju radnju sa tim vrednostima
 
-let niz = [20, 30, 50, 100, -2, -30, 50, "20"];
+// let niz = [20, 30, 50, 100, -2, -30, 50, "20"];
 
-console.log(niz.indexOf(50), "first index of");
+// console.log(niz.indexOf(50), "first index of");
 
-console.log(niz.lastIndexOf(50), "last index of");
+// console.log(niz.lastIndexOf(50), "last index of");
 
-console.log(niz.includes("20"));
+// console.log(niz.includes("20"));
 
-if (niz.indexOf(50) === -1) {
-	console.log("taj element ne postoji u nizu");
-} else {
-	console.log("taj element postoji u nizu");
-}
+// if (niz.indexOf(50) === -1) {
+// 	console.log("taj element ne postoji u nizu");
+// } else {
+// 	console.log("taj element postoji u nizu");
+// }
 
 // za domaci
 // imamo niz od 5 elemenata
@@ -52,6 +52,23 @@ if (niz.indexOf(50) === -1) {
 // primer:
 // let niz = [1, 2, 2, 2 , 3, 5]
 // vasa poruka treba da bude, da se broj 2 ponavlja tri puta u nizu.
+
+let niz = [1, 2, 2, 2, 3, 5];
+let brojac = 0;
+if (niz.indexOf(2)) {
+	brojac++;
+	let p = niz.indexOf(2);
+	if (niz.indexOf(2, p + 1)) {
+		brojac++;
+		let c = niz.indexOf(2, p + 1);
+		if (niz.indexOf(2, c + 1)) {
+			brojac++;
+		}
+	} else {
+		console.log("kriket");
+	}
+	console.log(brojac);
+}
 
 // za domaci:
 // isti niz imate
@@ -61,14 +78,14 @@ if (niz.indexOf(50) === -1) {
 // brojevi 6 i 9
 
 // imate niz od 10 elemenata:
-let newArray = [4, 5, 6, 7, 7, 8, 8, 9, 10, 11];
+// let newArray = [4, 5, 6, 7, 7, 8, 8, 9, 10, 11];
 // da nadjete prvu sedmicu sa leve strane, tj njen index
 // i prvu sedmicu sa desne strane, tj njen index
 
-console.log(newArray.indexOf(7));
-console.log(newArray.lastIndexOf(7));
+// console.log(newArray.indexOf(7));
+// console.log(newArray.lastIndexOf(7));
 
-let prvaSedmica = newArray.indexOf(7);
-let drugSedmica = newArray.indexOf(7, prvaSedmica + 1);
+// let prvaSedmica = newArray.indexOf(7);
+// let drugSedmica = newArray.indexOf(7, prvaSedmica + 1);
 
-console.log(drugSedmica);
+// console.log(drugSedmica);

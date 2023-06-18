@@ -42,6 +42,7 @@ let array = [
 ];
 
 console.log(array.slice(-2)); // sa kraja prva dva
+
 console.log(array.slice(0, 2)); // sa ppocetka prva dva
 // slice ne muttira niz, tj ne menja stari niz.
 console.log(array);
@@ -65,8 +66,8 @@ let newArray = array.concat(array2); // metoda concat spaja dva ili vise nizova 
 console.log(newArray);
 
 let brojevi = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 111];
-console.log(brojevi); // mutira niz, i radi reverse elemenata u nizu
-brojevi.reverse();
+console.log(brojevi);
+brojevi.reverse(); // mutira niz, i radi reverse elemenata u nizu
 console.log(brojevi);
 
 let letters = ["s", "k", "o", "p", "a", "w"];
@@ -79,9 +80,9 @@ console.log(brojevi);
 
 // funkcija ima kljucnu rec, naziv funkcije, parametre moze da ima a i ne mora, i telo funkcije.
 
-function davudKalkulise(a, b) {
+function davudKalkulise(nijebitno, uopstenijebitno) {
 	let rezultat = 0;
-	rezultat = a + b;
+	rezultat = nijebitno + uopstenijebitno;
 	console.log(rezultat);
 	return rezultat;
 }
@@ -94,7 +95,9 @@ function davudOduzima(a, b) {
 }
 // funckija ispisiPoruku ne prima nikakve parametre.
 function ispisiPoruku() {
-	console.log("uneli ste pogresne podatke, probajte opet");
+	console.log(
+		"uneli ste pogresne podatke, probajte opetl kjaslda lks jdlkjdlkajdk jksjd lajs sajd "
+	);
 }
 
 davudKalkulise(5, 5);

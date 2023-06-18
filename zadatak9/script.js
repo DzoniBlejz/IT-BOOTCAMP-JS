@@ -64,10 +64,34 @@ if (input % 2 === 0) {
 	console.log("nije paran");
 }
 
-console.log(newArray);
+// console.log(newArray);
 
 // za domaci:
 
 // uradite za slucaj kad je vrednost is prompta neparna i veca od 5 a manja od 20
 // da se izbrisu prva 2 elementa iz niza.
 // u suprotnom, dodajte 3 elementa na pocetak.
+
+// let unos = prompt("unesite vrednost");
+
+// if (isNaN(unos)) {
+// 	console.log(unos, "nije broj");
+// } else {
+// 	console.log(unos, "broj");
+// }
+let niz = ["kolicnik", "deljenik", "sabirnik", "pravnik"];
+
+let unos = parseFloat(prompt("unesite vrednost"));
+
+if (unos > 5 && unos < 20) {
+	console.log(unos, "izbrisi prva dva elementa");
+	niz.shift();
+	niz.shift();
+} else {
+	console.log(unos, "dodaj tri na pocetak");
+	niz.unshift("2");
+	niz.unshift("2");
+	niz.unshift("2");
+}
+
+console.log(niz);
