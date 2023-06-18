@@ -40,3 +40,11 @@ function spojiDva(jedan, dva) {
 }
 
 spojiDva(niz1, niz2);
+
+// za domaci:
+
+// da napravite funkciju, koja ce unetu vrednost iz prompta da smesti
+// u niz koji ste napravili u telu funkcije.
+// i napravite posebnu funkciju za ispis tog niza
+// znaci imate dve funkcije, jednu za smestanje vrednosti iz inputa
+// drugu za ispis niza
