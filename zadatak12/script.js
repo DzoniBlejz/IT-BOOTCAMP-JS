@@ -9,8 +9,9 @@ function compareNames(name1, name2) {
 }
 
 let nameeee = "vahid";
-console.log(nameeee.toUpperCase());
 compareNames("vahid", "mehme");
+
+compareNames("nikola", "nikolaaa");
 
 compareNames("nikola", "ilhan");
 // funkcija ukloniTri prima 1 parametar, a to je niz
@@ -48,3 +49,7 @@ spojiDva(niz1, niz2);
 // i napravite posebnu funkciju za ispis tog niza
 // znaci imate dve funkcije, jednu za smestanje vrednosti iz inputa
 // drugu za ispis niza
+
+let enesovaFunkcija = () => {}; // arrow function
+
+function enessovaFunkcija() {} // obicna funkcija
