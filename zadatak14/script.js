@@ -87,3 +87,12 @@
 // }
 
 // objasniti razliku var i leta u for petlji
+
+// domaci:
+
+//5. prethodni zadatak da dodate jos sledece:
+// ako se unese broj koji je deljiv sa 3, da se ispise poruka "ENES"
+// ako se unese broj koji je deljiv sa 5, da se ispise poruka "ENES KLIMENTA"
+// ako se unese broj koji je deljiv sa 3 i 5, da se ispise poruka "SEJO BOY"
+// svaki od ovih brojeva se paralelno upisuje u niz.
+// i nema vise unosa nakon toga broja koji je deljiv sa 3 i 5.
