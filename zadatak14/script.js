@@ -8,14 +8,14 @@
 // broj 50. kad se unese broj 50 tad se prekida petlja, i ispisuje se niz
 // sa prethodno unetim elementima. 50 nece da bude u nizu!!!!
 
-// const array = [];
-// let input = parseFloat(prompt("unesi broj"));
+const array = [];
+let input = parseFloat(prompt("unesi broj"));
 
-// for (let i = 0; input !== 50; i++) {
-// 	input = parseFloat(prompt("unesi broj"));
-// 	input === 50 ? "" : array.push(input);
-// }
-// console.log(array);
+for (let i = 0; input !== 50; i++) {
+	array.push(input);
+	input = parseFloat(prompt("unesi broj"));
+}
+console.log(array);
 
 // while (input !== 50) {
 // 	array.push(input);
@@ -90,9 +90,21 @@
 
 // domaci:
 
-//5. prethodni zadatak da dodate jos sledece:
+// 5. prethodni zadatak da dodate jos sledece:
 // ako se unese broj koji je deljiv sa 3, da se ispise poruka "ENES"
 // ako se unese broj koji je deljiv sa 5, da se ispise poruka "ENES KLIMENTA"
 // ako se unese broj koji je deljiv sa 3 i 5, da se ispise poruka "SEJO BOY"
 // svaki od ovih brojeva se paralelno upisuje u niz.
 // i nema vise unosa nakon toga broja koji je deljiv sa 3 i 5.
+
+// const niz = [1, 2, 3, 44, 1, 112, 44, 55, 1, 224, 55, 1, 50, 2, 0];
+
+// const sortNumbers = (a, b) => a - b;
+
+// function sortNumberRegular(a, b) {
+// 	return a - b;
+// }
+
+// niz.sort((a, b) => a - b);
+
+// console.log(niz);
