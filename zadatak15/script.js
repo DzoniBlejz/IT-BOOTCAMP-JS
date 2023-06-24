@@ -57,6 +57,8 @@ const dzenisov = {
 	cena: "dzabe",
 	kilometraza: 40000,
 };
+console.log(dzenisov.kilometraza, "dzenis");
+console.log(emilovAuto.kilometraza, "emil");
 
 if (emilovAuto.kilometraza > dzenisov.kilometraza) {
 	dzenisov.kilometraza += emilovAuto.kilometraza - dzenisov.kilometraza;
@@ -65,13 +67,8 @@ if (emilovAuto.kilometraza > dzenisov.kilometraza) {
 		dzenisov.kilometraza + emilovAuto.kilometraza - dzenisov.kilometraza;
 }
 
-console.log(emilovAuto.markaAutomobila);
-console.log(emilovAuto.cena);
-emilovAuto.cena = "50000eura";
-console.log(emilovAuto.cena);
-
-emilovAuto.najnovijiPropertiObjekta = "dodajemoNovi";
-console.log(emilovAuto);
+console.log(dzenisov.kilometraza, "dzenis");
+console.log(emilovAuto.kilometraza, "emil");
 
 // console.log(muhamedPodaciObjekat["muhamedTezina"]);
 // console.log(muhamedPodaciObjekat.muhamedBrUlice);
