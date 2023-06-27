@@ -38,11 +38,20 @@ const davudPodaci = [14, "170cm", "65kg", 20];
 // u pajton programskom jeziku objekti se zovu dictionary - recnici.
 
 const muhamedPodaciObjekat = {
-	muhamedGodine: 13,
-	muhamedVisina: "179cm",
+	muhamedGodine: {
+		nikola: "profesor",
+		davud: "nije doneo nista iz turske",
+	},
+	muhamedVisina: [1, 2, 3, 4, 5],
 	muhamedTezina: "70kg",
 	muhamedBrUlice: 14,
 };
+
+console.log(muhamedPodaciObjekat["muhamedGodine"]);
+
+console.log(muhamedPodaciObjekat.muhamedGodine);
+
+const varijabla = 10;
 
 const emilovAuto = {
 	markaAutomobila: "Mercedes",
