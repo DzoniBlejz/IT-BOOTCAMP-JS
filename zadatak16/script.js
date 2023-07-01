@@ -57,6 +57,10 @@ paletaBoja2.zuta = "#5555";
 console.log(paletaBoja);
 console.log(paletaBoja2);
 
+let niz = [1, 2, 3, 45];
+
+console.log(niz);
+
 const moovieCollection = [
 	{
 		nazivFilma: "Kad Jaganjci utihnu",
