@@ -122,6 +122,8 @@ const moovieCollection = [
 
 let najskupljiFilm = moovieCollection[0];
 let najduziFilm = moovieCollection[0];
+let najdzuziNaslovFilma = moovieCollection[0];
+let najstarijiFilm = moovieCollection[0];
 
 for (let i = 0; i < moovieCollection.length; i++) {
 	if (moovieCollection[i].budzet > najskupljiFilm.budzet) {
@@ -130,6 +132,17 @@ for (let i = 0; i < moovieCollection.length; i++) {
 	if (moovieCollection[i].trajanje > najduziFilm.trajanje) {
 		najduziFilm = moovieCollection[i];
 	}
+	if (
+		moovieCollection[i].nazivFilma.length >
+		najdzuziNaslovFilma.nazivFilma.length
+	) {
+		najdzuziNaslovFilma = moovieCollection[i];
+	}
+	if (moovieCollection[i].godinaPustanja < najstarijiFilm.godinaPustanja) {
+		najstarijiFilm = moovieCollection[i];
+	}
 }
 console.log(najskupljiFilm, "najskupljiFilm");
 console.log(najduziFilm, "najduziFilm");
+console.log(najdzuziNaslovFilma, "najdzuziNaslovFilma");
+console.log(najstarijiFilm, "najstarijiFilm");
