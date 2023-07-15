@@ -63,5 +63,25 @@ for (let i = 0; i < array.length; i++) {
 	}
 }
 console.log(result);
+console.clear();
 
+let result1 = [];
+
+function homework(number, niz) {
+	for (let i = 0; i < niz.length; i++) {
+		if (result1.length >= 2) {
+			break;
+		}
+		for (let j = 1; j < niz.length - 1; j++) {
+			if (niz[i] + niz[j] === number && i !== j) {
+				result1.push(i, j);
+				break;
+			}
+		}
+	}
+	return result1;
+}
+
+console.log(homework(25, [5, 2, 6, 12, 19, 7, 11, 3, 20]));
+//ez bre
 // uradite ovo pomocu funkcije
