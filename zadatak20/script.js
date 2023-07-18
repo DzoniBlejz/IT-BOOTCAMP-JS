@@ -12,22 +12,24 @@
 
 // roll(10);
 
-let niz = [];
-function rollThousand() {
-	let roll = Math.floor(Math.random() * 1000);
-	return roll;
-}
+// let niz = [];
+// function rollThousand() {
+// 	var roll = Math.floor(Math.random() * 1000);
+// 	return roll;
+// }
 
-function pozivanje(array, number) {
-	for (let i = 0; i < number; i++) {
-		array.push(rollThousand());
-	}
-}
+// console.log(roll);
 
-pozivanje(niz, 10);
-console.log(niz);
+// function pozivanje(array, number) {
+// 	for (let i = 0; i < number; i++) {
+// 		array.push(rollThousand());
+// 	}
+// }
 
-const noviNiz = [56, 412, 30, 312, 3, 4, 5, 6, 8, 123];
+// pozivanje(niz, 10);
+// console.log(niz);
+
+// const noviNiz = [56, 412, 30, 312, 3, 4, 5, 6, 8, 123];
 
 // funkcija koja nalazi srednju vrednost noviNiz niza.
 // funkcija koja nalazi najmanju vrednost u nizu
