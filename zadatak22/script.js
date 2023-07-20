@@ -63,3 +63,20 @@ stadion(sutniLoptu);
 function ispisiFunkcije(f1, f2) {
 	let rand = Math.random();
 }
+
+// pangram
+function isPangram(string) {
+	let strArr = string.toLowerCase();
+	let alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+
+	for (let i = 0; i < alphabet.length; i++) {
+		if (strArr.indexOf(alphabet[i]) < 0) {
+			return false;
+		}
+	}
+	console.log("its pangram");
+	return true;
+}
+
+isPangram("The quick brown fox jumps over the lazy dog");
+string.indexOf();
