@@ -75,23 +75,23 @@ const porscheCarPlatz = [
 const carSpeed = [
 	{
 		brandName: "SKODA",
-		maxsSpeed: "340kmh",
+		maxSpeed: "340kmh",
 	},
 	{
 		brandName: "Rolls Royce",
-		maxsSpeed: "300kmh",
+		maxSpeed: "300kmh",
 	},
 	{
 		brandName: "AUDI",
-		maxsSpeed: "280kmh",
+		maxSpeed: "280kmh",
 	},
 	{
 		brandName: "BMW",
-		maxsSpeed: "320kmh",
+		maxSpeed: "320kmh",
 	},
 	{
 		brandName: "Mercedes",
-		maxsSpeed: "280kmh",
+		maxSpeed: "280kmh",
 	},
 ];
 
@@ -99,3 +99,15 @@ const carSpeed = [
 // da doda max brzinu automobila iz objekta CarSpeed kao noovi properti u objektu porscheCarPlatz
 // pogledajte iteracija kroz objekat, metode Object.keys, Object.values, Object.entries, for in petlja
 // na mdn, w3schools
+
+for (let i = 0; i < porscheCarPlatz.length; i++) {
+	for (let j = 0; j < carSpeed.length; j++) {
+		if (
+			porscheCarPlatz[i].brandName.toUpperCase() ===
+			carSpeed[j].brandName.toUpperCase()
+		) {
+			porscheCarPlatz[i].maxSpeed = carSpeed[j].maxSpeed;
+		}
+	}
+}
+console.log(porscheCarPlatz);
