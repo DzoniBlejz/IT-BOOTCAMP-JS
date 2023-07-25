@@ -2,10 +2,24 @@ const fruitArray = ["apple", "banana", "watermelon", "kiwi"];
 let nizNovi = [];
 
 fruitArray.forEach((e, i, array) => {
-	return nizNovi.push(e.toUpperCase());
+	console.log(
+		array,
+		"ovo je niz prosledjen u call back funkciju for each metode"
+	);
+	nizNovi.push(e.toUpperCase());
+	return;
 });
 
-console.log(nizNovi);
+console.log(nizNovi, "saaaaaaaaaaaaaaaaaaaad");
+
+// const callBackFunction = (value, index, array) => {
+// 	for (index = 0; index < array.length; index++) {
+// 		value = array[index];
+// 	}
+// 	return value;
+// };
+
+// console.log(callBackFunction(0, 0, fruitArray));
 
 let newArray = fruitArray.forEach((e) => e.toUpperCase());
 console.log(newArray);
@@ -53,14 +67,12 @@ console.log(arrowFunc(10));
 const novvvvaFunkcija = (broj) => (broj > 10 ? broj * 100 : broj / 200);
 console.log(novvvvaFunkcija(5));
 
-const nijeTernarniIzraz = (broj) => {
+const novaArrowFunkcija = (broj) => {
 	if (broj > 10) {
 		return broj * 100;
 	}
 	return broj / 200;
 };
-
-console.log(nijeTernarniIzraz(5));
 
 const someFunc = (param) => {
 	return param - param;
@@ -78,3 +90,5 @@ const neparni = nums.filter((e) => {
 });
 
 console.log(neparni);
+
+// array.find, some, every
