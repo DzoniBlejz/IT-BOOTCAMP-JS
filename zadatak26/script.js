@@ -44,3 +44,6 @@ btn2.addEventListener("mouseover", () => {
 });
 
 // napravite funckiju koju cete proslediti u addevenetlistener.
+
+// imate 2 tima. napad traje 24 sekunde, napravite samo da ako jedna od ekipa zadrzi loptu duze
+// od 24 sekunde, se ispise ALERT da ta ekipa gubi posed. ispisati ime ekipe.
