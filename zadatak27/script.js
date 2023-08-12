@@ -44,7 +44,7 @@ btnClear.addEventListener("click", () => {
 	}
 });
 
-// html fajl je prazan imate samo body
+// u html body nemate elemenata, sve pravite preko javascript
 // preko js-a pravite sahovsku tablu
 // samo treba da napravite sahovsku tablu 64 polja ( razlicite boje  polja naravno bez figura)
 // + je da uradite nazive polja u tim kockicama koje budete pravili.
