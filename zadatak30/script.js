@@ -29,19 +29,37 @@ average(10, 20);
 
 //HTTP methods
 
-const API =
-	"https://private-anon-341d53318c-pizzaapp.apiary-mock.com/restaurants/";
+// const API =
+// 	"https://private-anon-341d53318c-pizzaapp.apiary-mock.com/restaurants/";
 
-function getRestauraunts() {
-	const response = fetch(API);
-	const restaurants = response
-		.then((result) => {
-			console.log(result, "rezultat");
-		})
-		.catch((err) => {
-			console.log(err, "error");
-		});
-	console.log(restaurants);
+// function getRestauraunts() {
+// 	const response = fetch(API);
+// 	const restaurants = response
+// 		.then((result) => {
+// 			console.log(result, "rezultat");
+// 		})
+// 		.catch((err) => {
+// 			console.log(err, "error");
+// 		});
+// 	console.log(restaurants);
+// }
+
+// getRestauraunts();
+
+function checkEvenNumber(num) {
+	return new Promise((resolve, reject) => {
+		if (num % 2 === 0) {
+			resolve(`broj je deljiv sa dva, a taj broj je: ${num}`);
+		} else {
+			reject(`broj nije deljiv sa dva, a taj broj je: ${num}`);
+		}
+	});
 }
 
-getRestauraunts();
+checkEvenNumber(96)
+	.then((result) => {
+		console.log(result);
+	})
+	.catch((error) => {
+		console.log(error);
+	});
