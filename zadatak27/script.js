@@ -21,13 +21,16 @@
 // // querySelector je univerzalna zamena za getElementbyId, tagName, i class name..
 // // (#id), (.className), (h1)
 
+const tiDokleSiBakire = document.querySelectorAll(".fotografije");
+console.dir(tiDokleSiBakire);
+
 const input1 = document.getElementById("input1");
 const input2 = document.getElementById("input2");
 const body = document.getElementsByTagName("body");
 const btnSubmit = document.getElementById("submit");
 const btnClear = document.getElementById("clear");
 
-btnSubmit.addEventListener("click", () => {
+const bobanRajovic = () => {
 	for (let i = 0; i < parseFloat(input1.value); i++) {
 		let pTag = document.createElement("p");
 		pTag.innerHTML = `${input2.value}`;
@@ -35,7 +38,10 @@ btnSubmit.addEventListener("click", () => {
 		body[0].appendChild(pTag);
 		console.log(pTag);
 	}
-});
+};
+
+btnSubmit.addEventListener("click", () => bobanRajovic());
+// btnSubmit.addEventListener("click", bobanRajovic);  isto se desava
 
 btnClear.addEventListener("click", () => {
 	for (let i = 0; i < parseFloat(input1.value); i++) {

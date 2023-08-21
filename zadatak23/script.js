@@ -20,6 +20,8 @@ function callIt() {
 	};
 }
 
+console.log(callIt());
+
 // console.log(callIt()); // ispisace se cela funkcija unutar callIt!
 
 const innerFunction = callIt(); // unutrasnju anonimnu funkciju dodajemo innerFunction varijabli, i ona postaje funkcija!
